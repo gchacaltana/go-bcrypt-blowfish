@@ -6,10 +6,10 @@ Generando password seguros Bcrypt/Blowfish en GO.
 
 Instalamos Go y seteamos la variable de entorno.
 
-  $ sudo yum install golang
-  $ mkdir $HOME/go
-  $ export GOPATH=$HOME/go
-  $ export PATH=$PATH:$GOPATH/bin
+	$ sudo yum install golang
+	$ mkdir $HOME/go
+	$ export GOPATH=$HOME/go
+	$ export PATH=$PATH:$GOPATH/bin
   
 Instalamos mercurial, para poder descargar el package bcrypt del repositorio de Google.
 
