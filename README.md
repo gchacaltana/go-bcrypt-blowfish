@@ -13,9 +13,9 @@ Instalamos Go y seteamos la variable de entorno.
   
 Instalamos mercurial, para poder descargar el package bcrypt del repositorio de Google.
 
-  $ sudo yum install mercurial
+	$ sudo yum install mercurial
 
 Si se presenta un problema para instalar Mercurial, puedes hacer lo siguiente:
 
-  $ sudo yum install python-setuptools python-devel gcc -y
-  $ sudo easy_install Mercurial
+	$ sudo yum install python-setuptools python-devel gcc -y
+	$ sudo easy_install Mercurial
