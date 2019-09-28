@@ -19,3 +19,25 @@ Si se presenta un problema para instalar Mercurial, puedes hacer lo siguiente:
 
 	$ sudo yum install python-setuptools python-devel gcc -y
 	$ sudo easy_install Mercurial
+
+Descargamos el package del repositorio de Google.
+
+	$ go get code.google.com/p/go.crypto/bcrypt
+
+## Ejecución
+
+Compilamos.
+
+	$ go build clicrypt.go
+
+Probamos.
+
+	$ ./bcrypt_generate -password="@gchacaltanab"
+
+Me retorna:
+
+	$ $2a$13$oWvgAl9CYjiQE8rjzX6h4.Lf/NS2pIAb9KnfG2s9vszFy6dXmP6Ry
+
+## Comparar password
+
+	$./bcrypt_generate -password="@gchacaltanab" -hash='$2a$13$oWvgAl9CYjiQE8rjzX6h4.Lf/NS2pIAb9KnfG2s9vszFy6dXmP6Ry
