@@ -9,10 +9,8 @@ import (
 func main() {
 	password := flag.String("password", "", "the password to hash or validate")
 	hash := flag.String("hash", "", "the hash to validate the password against")
-	cost := flag.Int("cost", 13, "the cost of the bcrypt function to execute")
- 
+	cost := flag.Int("cost", 14, "the cost of the bcrypt function to execute")
 	flag.Parse()
- 
 	if *hash != "" {
 		// do validation
 		err := bcrypt.CompareHashAndPassword([]byte(*hash), []byte(*password))
@@ -29,7 +27,6 @@ func main() {
 			fmt.Print("Error: Couldn't generate hash.")
 			os.Exit(1)
 		}
- 
 		fmt.Printf("%s\n", generated_hash)
 		os.Exit(0)
 	}
